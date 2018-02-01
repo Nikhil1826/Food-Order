@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9f5326</color>
+    <color name="colorPrimaryDark">#d5c7512a</color>
+    <color name="colorAccent">#e4c7512a</color>
+    <color name="lightorangedark">#ebd6ab</color>
+    <color name="black">#000</color>
+    <color name="lightorange">#fdf2df</color>
+    <color name="btnSignUp">#357b6b</color>
+    <color name="btnLogin">#914f37</color>
+    <color name="btnLogin2">#1a2f43</color>
+
+    <color name="background">#8915154e</color>
+    <color name="actionBar">#23405c</color>
+    <color name="card">#e4c7512a</color>
+    <color name="card2">#36d7d1ce</color>
+    <color name="btnplaceorder">#dc6414</color>
+    <color name="back">#96dc6414</color>
+</resources>

@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fasttech.foodorder.Interface.itemClickListener;
+import com.fasttech.foodorder.ViewHolder.CartAdapter;
 import com.fasttech.foodorder.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
@@ -95,7 +96,7 @@ public class CategoryActivity extends AppCompatActivity
                     public void onClick(View view, int position, boolean isLongClick) {
                         //forward pass menuId to FoodListActivity
                         Intent intent = new Intent(CategoryActivity.this,FoodListActivity.class);
-                        intent.putExtra("MenuId",adapter.getRef(position).getKey());
+                        intent.putExtra("menuId",adapter.getRef(position).getKey());
                         startActivity(intent);
                     }
                 });
@@ -135,12 +136,20 @@ public class CategoryActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_menu) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_cart) {
+            Intent intent = new Intent(CategoryActivity.this,CartActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_orders) {
+            Intent intent = new Intent(CategoryActivity.this,OrderStatusActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
+            Intent intent = new Intent(CategoryActivity.this,LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+
 
         }
 

@@ -69,7 +69,7 @@ public class FoodDetailsActivity extends AppCompatActivity {
         collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.CollapsedAppBar);
 
         if(getIntent()!=null){
-            foodId = getIntent().getStringExtra("FoodId");
+            foodId = getIntent().getStringExtra("foodId");
         }
         if(!foodId.isEmpty() && foodId!=null){
             getFoodDetail(foodId);
